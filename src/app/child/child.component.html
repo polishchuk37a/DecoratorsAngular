@@ -1,0 +1,11 @@
+<div class="child _container">
+  <p class="child__title">Child component</p>
+  <p class="text">Text from parent component: {{myInputText}}</p>
+
+  <form action="" [formGroup]="childForm" class="form">
+    <input type="text" placeholder="Send to parent..."  formControlName="text" class="child-input" #input>
+    <button (click)="sendTextToParent(input.value)" class="send-to-parent__btn">Send to parent</button>
+  </form>
+
+</div>
+

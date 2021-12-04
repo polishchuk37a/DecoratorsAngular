@@ -1,0 +1,10 @@
+<div class="container">
+  <app-child [myInputText]="textToChild" (myOutputText)="getDataFromChild($event)" ></app-child>
+  <hr>
+  <p class="parent__title">Parent component</p>
+  <p class="parent__text">Text from child component: {{textFromChild}} </p>
+  <form action="" [formGroup]="parentForm" class="form">
+    <input type="text" formControlName="text" class="parent-input" placeholder="Send to child..." #input>
+    <button class="send-to-child__btn" (click)="sendTextToChild(input.value)">Send to child</button>
+  </form>
+</div>

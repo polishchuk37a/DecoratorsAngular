@@ -1,0 +1,36 @@
+._container {
+  width: 800px;
+  margin: 0 auto;
+
+  .child__title {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .text {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+  }
+
+  .form {
+    display: flex;
+    align-items: center;
+
+    .child-input {
+      width: 250px;
+      height: 30px;
+      padding-left: 10px;
+      border-radius: 5px;
+    }
+
+    .send-to-parent__btn {
+      margin-left: 20px;
+      width: 120px;
+      height: 37px;
+      border-radius: 5px;
+      background: black;
+      color: white;
+    }
+  }
+}
